@@ -1,0 +1,16 @@
+PODS:
+  - MisoPush_ios (0.1.0)
+
+DEPENDENCIES:
+  - MisoPush_ios (from `../`)
+
+EXTERNAL SOURCES:
+  MisoPush_ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MisoPush_ios: ab1534b7b3be8300d57c2a1cb12137523efa2e77
+
+PODFILE CHECKSUM: 4b519db06e6f9227508658c5d279dea924946bf2
+
+COCOAPODS: 1.9.0

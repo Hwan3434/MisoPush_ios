@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import MisoPush_ios
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        MisoPush().log("ok");
+        
+        MisoPushClient().log(with: "ss");
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

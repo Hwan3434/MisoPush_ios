@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		237732A1E107E8380F291EEA /* Pods-MisoPush_ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoPush_ios_Example.debug.xcconfig"; path = "Target Support Files/Pods-MisoPush_ios_Example/Pods-MisoPush_ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		370648F1AD4A79E7088FEA7D /* Pods-MisoPush_ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoPush_ios_Tests.release.xcconfig"; path = "Target Support Files/Pods-MisoPush_ios_Tests/Pods-MisoPush_ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		51C35774AF1E33B6286DB145 /* MisoPush_ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MisoPush_ios.podspec; path = ../MisoPush_ios.podspec; sourceTree = "<group>"; };
+		51C35774AF1E33B6286DB145 /* MisoPush_ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MisoPush_ios.podspec; path = ../MisoPush_ios.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C4105018961F04FB1259546 /* Pods_MisoPush_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisoPush_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* MisoPush_ios_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisoPush_ios_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9882969B663D16F6F7EA67A3 /* Pods-MisoPush_ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoPush_ios_Example.release.xcconfig"; path = "Target Support Files/Pods-MisoPush_ios_Example/Pods-MisoPush_ios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9FCF9CF434427380454E903E /* Pods_MisoPush_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisoPush_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1F4B62C465C8C79ED582804 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D9C11E6EB1346A97E6B70DD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D1F4B62C465C8C79ED582804 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D9C11E6EB1346A97E6B70DD9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F9FBAEC79906606977CCF3CE /* Pods-MisoPush_ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MisoPush_ios_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MisoPush_ios_Tests/Pods-MisoPush_ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				F9FBAEC79906606977CCF3CE /* Pods-MisoPush_ios_Tests.debug.xcconfig */,
 				370648F1AD4A79E7088FEA7D /* Pods-MisoPush_ios_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,6 +213,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,11 +479,15 @@
 			baseConfigurationReference = 237732A1E107E8380F291EEA /* Pods-MisoPush_ios_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MisoPush_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,11 +498,14 @@
 			baseConfigurationReference = 9882969B663D16F6F7EA67A3 /* Pods-MisoPush_ios_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MisoPush_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miso.push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

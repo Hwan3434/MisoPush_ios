@@ -1,0 +1,6 @@
+framework module MisoPush_ios {
+  umbrella header "MisoPush_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
