@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MisoPush_ios_Example' do
+  pod 'MisoPush_ios', :path => '../'
+
+  target 'MisoPush_ios_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
