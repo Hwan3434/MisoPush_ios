@@ -32,6 +32,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'MisoPush_ios/Classes/**/*'
   
+  s.swift_version = '4.0'
+  
   # s.resource_bundles = {
   #   'MisoPush_ios' => ['MisoPush_ios/Assets/*.png']
   # }

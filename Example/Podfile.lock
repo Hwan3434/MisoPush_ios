@@ -1,5 +1,5 @@
 PODS:
-  - MisoPush_ios (0.1.0)
+  - MisoPush_ios (0.3.0)
 
 DEPENDENCIES:
   - MisoPush_ios (from `../`)
