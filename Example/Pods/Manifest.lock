@@ -1,5 +1,5 @@
 PODS:
-  - MisoPush_ios (0.4.2)
+  - MisoPush_ios (0.4.3)
 
 DEPENDENCIES:
   - MisoPush_ios (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MisoPush_ios: 5ec699e5a34c19c6e25f24a21f07d5f72c895f43
+  MisoPush_ios: a5c1b53d767fa841af4c7e2b3eda6a3a24dc632f
 
 PODFILE CHECKSUM: 4b519db06e6f9227508658c5d279dea924946bf2
 

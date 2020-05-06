@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AA8CBC422EFD1FDC7339915BA51812D /* MisoPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3663D4AE2037B287F2794BE6C16647C /* MisoPush.swift */; };
 		5A4C780D0F215F8B533AB93DF10F1FDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		717AFCDE2BEE1658DC1E35139FAE7E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		78AB4073ACDFB3CDBB7AEA1651A665A4 /* MisoPushClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DDB110102747D390883CCFB2A9AF55 /* MisoPushClient.swift */; };
@@ -16,6 +15,7 @@
 		9795396BD799BF7B52A3E4956E8C0840 /* MisoPush_ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA934DF4ED2B128581CD2F9465FA613C /* MisoPush_ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB407A5788F5642D0C695BEC7D03F6D7 /* Pods-MisoPush_ios_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7003AEDEB04097B2C6D28CAF8E82FF /* Pods-MisoPush_ios_Example-dummy.m */; };
 		EF090C5C593C3D29FF86FD6EFE0A9755 /* Pods-MisoPush_ios_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 359B2BBB6431A6F37482CA0EFBE3651C /* Pods-MisoPush_ios_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F58746142462545300FCE873 /* RequestMessageSaveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58746132462545300FCE873 /* RequestMessageSaveModel.swift */; };
 		FD9979BDCE369C2B5AFCC2477D61A817 /* Pods-MisoPush_ios_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F05775604C30F62A64CEDA0504D26A42 /* Pods-MisoPush_ios_Tests-dummy.m */; };
 		FE9C0A0AD3C2691073727614D18F53A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -38,38 +38,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17C27D0C5758DAF2F0B0F3AA8C5FA626 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		17C27D0C5758DAF2F0B0F3AA8C5FA626 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		359B2BBB6431A6F37482CA0EFBE3651C /* Pods-MisoPush_ios_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MisoPush_ios_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3B681BFC18597273DF0D7FD5DF8131F0 /* Pods-MisoPush_ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MisoPush_ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C7003AEDEB04097B2C6D28CAF8E82FF /* Pods-MisoPush_ios_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MisoPush_ios_Example-dummy.m"; sourceTree = "<group>"; };
 		4C91D6A1CEA5466E8854F022DF054BE0 /* Pods-MisoPush_ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MisoPush_ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		513DFE6426F5CC1AC0B3C06DD99F89DB /* MisoPush_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MisoPush_ios.release.xcconfig; sourceTree = "<group>"; };
-		526361F516A6C9E92D837625658689E3 /* Pods_MisoPush_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MisoPush_ios_Example.framework; path = "Pods-MisoPush_ios_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		526361F516A6C9E92D837625658689E3 /* Pods_MisoPush_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisoPush_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2925D56B8CE4E2BA85B38761D078A9 /* MisoPush_ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MisoPush_ios-dummy.m"; sourceTree = "<group>"; };
 		63816722186FB46F5FB0F85EAB09F2DC /* Pods-MisoPush_ios_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MisoPush_ios_Example.modulemap"; sourceTree = "<group>"; };
 		732B4A1D6B9D181226726ADFFC3F83C6 /* Pods-MisoPush_ios_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MisoPush_ios_Example-Info.plist"; sourceTree = "<group>"; };
-		7E45229DFE0F5298FA8DC0042B34FBA4 /* MisoPush_ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MisoPush_ios.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7E45229DFE0F5298FA8DC0042B34FBA4 /* MisoPush_ios.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MisoPush_ios.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		83473FA62FC904DA94E027AD802B9046 /* Pods-MisoPush_ios_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MisoPush_ios_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D59FF1A86BCE5E65C5BCA4377B5C9DD /* Pods-MisoPush_ios_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MisoPush_ios_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4BFE56D3FEE76BB27F3A3ED09C91E51 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4BFE56D3FEE76BB27F3A3ED09C91E51 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACA2668C495483333AFEA83CB61F9B3B /* Pods-MisoPush_ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MisoPush_ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B2AC4CAD5B55102BF38FC4325BCBADEE /* MisoPush_ios-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MisoPush_ios-prefix.pch"; sourceTree = "<group>"; };
 		BD19582DBE0CDE681610A28F0E7E4D56 /* Pods-MisoPush_ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MisoPush_ios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C2BA21B839D16B43FA4ACA75BDAA0F33 /* Pods-MisoPush_ios_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MisoPush_ios_Example-umbrella.h"; sourceTree = "<group>"; };
 		C2DDB110102747D390883CCFB2A9AF55 /* MisoPushClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MisoPushClient.swift; path = MisoPush_ios/Classes/MisoPushClient.swift; sourceTree = "<group>"; };
-		C3663D4AE2037B287F2794BE6C16647C /* MisoPush.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MisoPush.swift; path = MisoPush_ios/Classes/MisoPush.swift; sourceTree = "<group>"; };
 		C40AE6E7E30CFC9EC190D94A7246730C /* Pods-MisoPush_ios_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MisoPush_ios_Example-frameworks.sh"; sourceTree = "<group>"; };
-		C4425AA09BF75D7F3C249502DF31AE78 /* Pods_MisoPush_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MisoPush_ios_Tests.framework; path = "Pods-MisoPush_ios_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4425AA09BF75D7F3C249502DF31AE78 /* Pods_MisoPush_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MisoPush_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA934DF4ED2B128581CD2F9465FA613C /* MisoPush_ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MisoPush_ios-umbrella.h"; sourceTree = "<group>"; };
 		CB9D6E88F9BBB8F417BDCF0A61DC620B /* Pods-MisoPush_ios_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MisoPush_ios_Tests-Info.plist"; sourceTree = "<group>"; };
 		DFB18B50B1320172AC54D9A5F61DB25F /* MisoPush_ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MisoPush_ios.modulemap; sourceTree = "<group>"; };
 		EE210CFD9AEF56C4AF9A5A91A4A61D14 /* Pods-MisoPush_ios_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MisoPush_ios_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F05775604C30F62A64CEDA0504D26A42 /* Pods-MisoPush_ios_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MisoPush_ios_Tests-dummy.m"; sourceTree = "<group>"; };
 		F10E0AB747EB4FFA5465B979E6F78A4F /* Pods-MisoPush_ios_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MisoPush_ios_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F58746132462545300FCE873 /* RequestMessageSaveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMessageSaveModel.swift; sourceTree = "<group>"; };
 		F657F637A580C54227DC41710AB29890 /* Pods-MisoPush_ios_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MisoPush_ios_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F8B002A1AE6D848596C555A44618E02F /* MisoPush_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MisoPush_ios.framework; path = MisoPush_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B002A1AE6D848596C555A44618E02F /* MisoPush_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MisoPush_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B047ACDBDDED00DAC864701F9B9EDF /* MisoPush_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MisoPush_ios.debug.xcconfig; sourceTree = "<group>"; };
 		FFBA63A0AD46C2E3E63127D0C4873773 /* MisoPush_ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MisoPush_ios-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +105,7 @@
 		0B2D80B40B7B399E57F81A0EE347FAE0 /* MisoPush_ios */ = {
 			isa = PBXGroup;
 			children = (
-				C3663D4AE2037B287F2794BE6C16647C /* MisoPush.swift */,
+				F58746122462543D00FCE873 /* New Group */,
 				C2DDB110102747D390883CCFB2A9AF55 /* MisoPushClient.swift */,
 				29BDF4D4651EE5DA9DD38058FDC0A547 /* Pod */,
 				D4DD193FF08CB9AD7DBC3CBA42A5C250 /* Support Files */,
@@ -224,6 +224,14 @@
 				C4425AA09BF75D7F3C249502DF31AE78 /* Pods_MisoPush_ios_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F58746122462543D00FCE873 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				F58746132462545300FCE873 /* RequestMessageSaveModel.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,8 +386,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA8CBC422EFD1FDC7339915BA51812D /* MisoPush.swift in Sources */,
 				86185B2878FB01C23BA977801BB7FEB2 /* MisoPush_ios-dummy.m in Sources */,
+				F58746142462545300FCE873 /* RequestMessageSaveModel.swift in Sources */,
 				78AB4073ACDFB3CDBB7AEA1651A665A4 /* MisoPushClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,8 +569,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

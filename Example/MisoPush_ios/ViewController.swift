@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 //        MisoPush().log("ok");
         
         MisoPushClient().log(with: "Ss")
+        MisoPushClient().requestMessageInsert(userKey: "a", messageKey: "b")
         
         
         // Do any additional setup after loading the view, typically from a nib.
