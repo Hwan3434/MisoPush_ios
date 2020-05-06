@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MisoPush_ios'
-  s.version          = '0.4.2'
+  s.version          = '0.4.3'
   s.summary          = 'A short description of MisoPush_ios.'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-
+                       
   s.homepage         = 'https://github.com/Hwan3434/MisoPush_ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

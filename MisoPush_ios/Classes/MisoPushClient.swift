@@ -12,7 +12,7 @@ public class MisoPushClient: NSObject {
     
     
     @objc
-    func requestMessageInsert(userKey:String, messageKey:String) {
+    public func requestMessageInsert(userKey:String, messageKey:String) {
         
         
         print("\(userKey),\(messageKey) from requestMessageInsert")
