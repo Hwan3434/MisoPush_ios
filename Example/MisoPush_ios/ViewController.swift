@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        MisoPush().log("ok");
         
-        MisoPushClient().log(with: "ss");
+        MisoPushClient().log(with: "Ss")
         
         
         // Do any additional setup after loading the view, typically from a nib.
